@@ -1,0 +1,70 @@
+.container {
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+.container_title {
+    text-shadow: 0.15em 0.15em #9999;
+    font-size: 2rem;
+}
+.container_phrase {
+    width: 100%;
+    background-image: url(/public/rectangle2.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size : contain;
+    padding: 4em;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+.btn {
+    padding: 0.8em 1.2em;
+    border-radius: 0.7em;
+    font-size: 1.3rem;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: opacity 200ms ease,
+                transform 200ms ease,
+                opacity 200ms ease;
+}
+.btn:hover {
+    opacity: 1;
+    transform: scale(1.07);
+    box-shadow: 0 0 0.8 #0003;
+}
+
+p {
+    max-width: 600px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 410px) {
+    .container_phrase {
+        padding: 2em;
+        gap: 1em;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 280px) {
+    .container_phrase {
+        padding: 1em;
+        gap: 0;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+/*  
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+*/
